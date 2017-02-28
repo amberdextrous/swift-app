@@ -34,24 +34,40 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNP-MS-8Jn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-Ya-PQR">
-                                <rect key="frame" x="136" y="165" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PUSH ME TOO"/>
-                                <connections>
-                                    <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atL-y2-7tA"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMJ-0K-z1L">
+                                <rect key="frame" x="137" y="160" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3E4-U4-Rgd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A89-FN-aSC">
+                                <rect key="frame" x="137" y="218" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="oRP-ps-WjN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AMJ-0K-z1L" firstAttribute="top" secondItem="Lqd-ch-zEN" secondAttribute="bottom" constant="83" id="1dT-ZO-lY2"/>
                             <constraint firstItem="g4q-90-kEr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="8oT-Iu-VoD"/>
                             <constraint firstItem="Lqd-ch-zEN" firstAttribute="top" secondItem="g4q-90-kEr" secondAttribute="bottom" constant="9" id="CF5-Zw-piL"/>
                             <constraint firstItem="g4q-90-kEr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PPe-4d-L17"/>
+                            <constraint firstItem="A89-FN-aSC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VyF-rp-JjZ"/>
                             <constraint firstItem="Lqd-ch-zEN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bF1-vT-Rwn"/>
+                            <constraint firstItem="AMJ-0K-z1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKu-3C-brF"/>
+                            <constraint firstItem="A89-FN-aSC" firstAttribute="top" secondItem="AMJ-0K-z1L" secondAttribute="bottom" constant="28" id="zyz-gr-P0B"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="AMJ-0K-z1L" id="D1H-vg-fTU"/>
+                        <outlet property="text2" destination="A89-FN-aSC" id="Vaz-AZ-6Xj"/>
                         <outlet property="theLabel" destination="g4q-90-kEr" id="RI6-oL-LVI"/>
                     </connections>
                 </viewController>
